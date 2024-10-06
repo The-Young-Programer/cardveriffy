@@ -366,10 +366,13 @@
     // Close modal button event listener
     document.getElementById('close-modal-btn').addEventListener('click', function () {
         document.getElementById('modal').style.display = 'none';
+          location.reload(); // Refresh the page
+
     });
     
     document.getElementById('close-invalid-modal-btn').addEventListener('click', function () {
         document.getElementById('invalid-modal').style.display = 'none';
+          location.reload(); // Refresh the page
     });
     </script>
     
